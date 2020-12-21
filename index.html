@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" id="ans">0</td>
+        </tr>
+        <tr>
+            <td id="clear" onclick="cls()" class="grey grey-opp">C</td>
+            <td id="backspace" onclick="backspace()" class="grey grey-opp">Bksp</td>
+            <td id="rparen" class=" grey grey-opp"></td>
+            <td id="percent" onclick="percent()" class="orange orange-opp">%</td>
+        </tr>
+        <tr>
+            <td id="seven" onclick="calcBtn('7')" class="grey grey-opp">7</td>
+            <td id="eight" onclick="calcBtn('8')" class="grey grey-opp">8</td>
+            <td id="nine" onclick="calcBtn('9')" class="grey grey-opp">9</td>
+            <td id="divide" onclick="calcBtn('/')" class="orange orange-opp">/</td>
+        </tr>
+        <tr>
+            <td id="four" onclick="calcBtn('4')" class="grey grey-opp">4</td>
+            <td id="five" onclick="calcBtn('5')" class="grey grey-opp">5</td>
+            <td id="six" onclick="calcBtn('6')" class="grey grey-opp">6</td>
+            <td onclick="calcBtn('*')" class="orange orange-opp">*</td>
+        </tr>
+        <tr>
+            <td id="one" onclick="calcBtn('1')" class="grey grey-opp">1</td>
+            <td id="two" onclick="calcBtn('2')" class="grey grey-opp">2</td>
+            <td id="three" onclick="calcBtn('3')" class="grey grey-opp">3</td>
+            <td id="minus" onclick="calcBtn('-')" class="orange orange-opp">-</td>
+        </tr>
+        <tr>
+            <td id="point" onclick="calcBtn('.')" class="grey grey-opp">.</td>
+            <td id="zero" onclick="calcBtn('0')" class="grey grey-opp">0</td>
+            <td onclick="equals()" class="grey grey-opp">=</td>
+            <td id="plus" onclick="calcBtn('+')" class="orange orange-opp">+</td>
+        </tr>
+        <tr></tr>
+    </table>
+    <script type="text/javascript" src='./script.js'></script>
+</body>
+</html>
